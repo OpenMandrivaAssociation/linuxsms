@@ -69,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/xlinuxsms.pl
 %defattr(-,root,root,0755)
 %doc BUGS CHANGES COPYING README README.ES TODO
-%{_mandir}/man1/linuxsms.1.bz2
+%{_mandir}/man1/linuxsms.1*
 %{_menudir}/*
 %{_miconsdir}/*
 %{_iconsdir}/*.png
