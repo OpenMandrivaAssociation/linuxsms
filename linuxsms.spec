@@ -17,7 +17,6 @@ Patch1:		linuxsms-0.77-pady.patch.bz2
 License:	GPL
 Group:		Communications
 URL:		http://linuxsms.sourceforge.net
-BuildRoot:	%_tmppath/%name-buildroot
 Buildarch:	noarch
 
 %description
