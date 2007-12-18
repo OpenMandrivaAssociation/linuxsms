@@ -42,15 +42,15 @@ bzcat %{SOURCE2} > xlinuxsms.pl
 %__install -D -m 644 %{name}16.png %buildroot/%_miconsdir/%name.png
 
 # menu
-mkdir -p %buildroot/%_menudir
-cat > %buildroot/%_menudir/%name << EOF
-?package(%name): \
-command="%_bindir/xlinuxsms.pl" \
-needs="X11" \
-icon="%name.png" \
-section="Office/Communications/Phone" \
-title="LinuxSMS" \
-longtitle="%summary"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%name.desktop
+[Desktop Entry]
+Type=Application
+Exec=%_bindir/xlinuxsms.pl
+Icon=%name
+Categories=Network;
+Name=LinuxSMS
+Comment=%summary
 EOF
 
 %post
@@ -69,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,0755)
 %doc BUGS CHANGES COPYING README README.ES TODO
 %{_mandir}/man1/linuxsms.1*
-%{_menudir}/*
+%{_datadir}/applications/mandriva-*.desktop
 %{_miconsdir}/*
 %{_iconsdir}/*.png
 %{_liconsdir}/*
