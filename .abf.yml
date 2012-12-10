@@ -1,4 +1,6 @@
 sources:
-  "linuxsms-0.77.tar.bz2:"	e0a0b26b6fc856011468c08bc7fc5d6bf9a0e746
-  "linuxsms-icons.tar.bz2:"	07739d4d0ee2e416a001275811a64c03bb090f28
-  "xlinuxsms.pl.bz2:"	9b082ed3a8d7d2b8860c7c0c436cb2533908344a
+  "linuxsms-0.77-pady.patch.bz2": 2d5d76135ed7bd100a4359d5f4bced1a8fbb0540
+  "linuxsms-0.77.tar.bz2": e0a0b26b6fc856011468c08bc7fc5d6bf9a0e746
+  "linuxsms-icons.tar.bz2": 07739d4d0ee2e416a001275811a64c03bb090f28
+  "linuxsms-makefile.patch.bz2": 22ee78e2db567e3b2cb246dd2b6ffab585b38638
+  "xlinuxsms.pl.bz2": 9b082ed3a8d7d2b8860c7c0c436cb2533908344a
