@@ -1,6 +1,6 @@
 %define	name	linuxsms
 %define version	0.77
-%define release	 %mkrel 7
+%define release	 8
 
 
 %define summary	Cool script to send SMS
